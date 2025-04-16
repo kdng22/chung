@@ -18,3 +18,7 @@ def forward_to_webhook():
 @app.route("/", methods=["GET"])
 def hello():
     return "중계 서버 작동 중입니다!", 200
+
+if __name__ == "__main__":
+    app.run(host="0.0.0.0", port=8080)
+
