@@ -3,7 +3,8 @@ import requests
 
 app = Flask(__name__)
 
-WEBHOOK_URL = "https://script.google.com/macros/s/YOUR_SCRIPT_ID/exec"
+WEBHOOK_URL = "https://script.google.com/macros/s/AKfycbxOTVQ33NLJzVn0bj5WZ9Ui57GqGfND90TQYbefev-XHhbFB-tlmBRnTmHG94hfxq5wXg/exec"
+
 
 @app.route("/", methods=["POST"])
 def forward_to_webhook():
